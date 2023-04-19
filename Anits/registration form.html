@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="title">
+  <h1 align="center"><font size="6px">REGISTRATION FORM</font></h1>
+  </div>
+  <form name="f1" method="post">
+    <table border="1" align="center" cellpadding="6px">
+      <tr>
+        <td><label for="username">NAME:</label></td>
+        <td><input type="text" name="username" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email ID:</label></td>
+        <td><input type="email" name="eid" required></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td><input type="radio" name="gender" required>male
+            <input type="radio" name="gender" required>female
+        </td>
+      </tr>
+      <tr>
+        <td><label for="religion">Religion:</label></td>
+        <td><select name="religion" required>
+          <option value="none" selected disabled hidden>Select an 
+        Option</option>
+          <option value="HINDU">HINDU</option>
+          <option value="MUSLIM">MUSLIM</option>
+          <option value="CHRISTIAN">CHRISTIAN</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><label for="DOB">DOB:</label></td>
+        <td><input type="date" name="date" required></td>
+      </tr>
+      <tr>
+        <td><label for="Languages">Languages:</label></td>
+        <td><input type="radio" name="Language">TELUGU
+            <input type="radio" name="Language">ENGLISH
+            <input type="radio" name="Language">HINDI
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><textarea rows="5" cols="10"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td><label for="password">Confirm Password:</label></td>
+        <td><input type="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td><input type="submit" name="submit" value="submit"></td>
+        <td><input type="reset" name="clear" value="clear"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

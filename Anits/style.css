@@ -1,0 +1,69 @@
+
+html, body {
+ height: 100%;
+width: 100%;
+}
+.headingbg{
+background-color:orangered;
+height:90%;
+}
+.leftlist{
+list-style-type: square;
+}
+.college{
+list-style-type: lower-roman;
+list-style-position: inside;
+}
+.university{
+list-style-type: decimal;
+list-style-position: outside;
+}
+.item{
+list-style-type: disc;
+list-style-position: inside;
+}
+table{
+border: 1px solid black;
+border-collapse: collapse;
+width: 40%;
+height: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+td,th{
+text-align: center;
+border: 1px solid black;
+}
+tr:hover{
+background-color: orangered;
+}
+a:link{
+color:green;
+text-decoration:none;
+background-color:#e6e6eb;
+}
+a:visited{
+color:green;
+text-decoration:none;
+background-color:#969791;
+}
+a:hover{
+color:hotpink;
+text-decoration:underline;
+background-color:lightgreen;
+}
+a:active{
+color:lightblue;
+text-decoration:underline;
+background-color:lightblue
+}
+.images{
+border: 1px solid #9f3232;
+border-radius: 3px;
+padding: 4px;
+border-spacing: 1px;
+width: 150px;
+}
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
