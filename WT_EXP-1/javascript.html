@@ -1,0 +1,84 @@
+
+<html>
+    <body>
+        <h1 id="h1">Changing the header</h1>
+        <button onclick='document.getElementById("h1").innerHTML="This is ok"'>ok</button><button onclick='document.getElementById("h1").innerHTML="This is not ok"'>not ok</button><br>
+        <p id="p">Changing the color</p>
+        <button onclick='document.getElementById("p").style.color="red"'>red</button><button onclick='document.getElementById("p").style.color="blue"'>blue</button><br>
+        <img id='images.jpeg' src="images.jpeg">
+        <button onclick='document.getElementById("images.jpeg").src="ANITS.jpeg"'>ANITS</button><button onclick='document.getElementById("images.jpeg").src="COLLEGE.jpeg"'>COLLEGE</button><br>
+        <button id='button' onclick="button()">1</button>
+        <script>
+            var n=1
+            function button(){
+                n=n+1
+                document.getElementById("button").innerHTML=n;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>
+        <button id="up" onclick="display1()">Menu open</button>
+        <p id="1" onclick="textbox()" >Text</p>
+        <p id="2" onclick="button()">Button</p>
+        <p id="3" onclick="radio()">Radio</p>
+        <p id="4" onclick="check()">Check</p>
+        <br>
+        <button id="down" onclick="display2()">Menu close</button>
+    </th>
+    <th>
+        <div id="y">
+        </div>
+    </th>
+</tr>
+       </table>    
+        <script>
+            function display1(){
+                document.getElementById("1").style.display="block";
+                document.getElementById("2").style.display="block";
+                document.getElementById("3").style.display="block";
+                document.getElementById("4").style.display="block";
+            }
+            function display2(){
+                document.getElementById("1").style.display="none";
+                document.getElementById("2").style.display="none";
+                document.getElementById("3").style.display="none";
+                document.getElementById("4").style.display="none";
+            }
+            function textbox(){
+                const t=document.createElement("input");
+                t.setAttribute("type","text");
+                document.getElementById("y").appendChild(t);
+            }
+            function button(){
+                const t=document.createElement("input");
+                t.setAttribute("value","Click Me");
+                t.setAttribute("type","button"); 
+                document.getElementById("y").appendChild(t);
+            }
+            function radio(){
+                const t=document.createElement("input");
+                t.setAttribute("type","radio"); 
+                document.getElementById("y").appendChild(t);
+                const h = document.createElement("label");
+                h.innerHTML="Radio"
+                document.getElementById("y").appendChild(h);
+            }
+            function check(){
+                const t=document.createElement("input");
+                t.setAttribute("type","checkbox"); 
+                document.getElementById("y").appendChild(t);
+                const h = document.createElement("label");
+                h.innerHTML="Check"
+                document.getElementById("y").appendChild(h);
+            }
+        </script>
+    </body>
+</html>
